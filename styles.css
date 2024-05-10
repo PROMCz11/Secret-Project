@@ -272,3 +272,9 @@ main > img {
         background-color: var(--box-bg);
     }
 }
+
+@media (max-width: 560px) {
+    main {
+        padding: 7vh 0;
+    }
+}
