@@ -94,7 +94,7 @@ body {
     align-items: center;
     text-align: right;
     color: #DCE8FF;
-    overflow: hidden;
+    overflow-x: hidden;
     position: relative;
 }
 
