@@ -126,6 +126,9 @@ main > img {
     gap: .5rem;
     z-index: -1;
     transform: rotate(45deg);
+    -webkit-transform:rotate(45deg);
+    -moz-transform:rotate(45deg);
+    -o-transform:rotate(45deg); 
 }
 
 .animated-grid .box {
