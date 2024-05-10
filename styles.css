@@ -118,7 +118,7 @@ main > img {
 .animated-grid {
     display: grid;
     grid-template-columns: repeat(20, 1fr);
-    position: absolute;
+    position: fixed;
     top: 50%;
     left: 50%;
     translate: -50% -50%;
