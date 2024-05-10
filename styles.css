@@ -125,7 +125,7 @@ main > img {
     translate: -50% -50%;
     gap: .5rem;
     z-index: -1;
-    rotate: 45deg;
+    transform: rotate(45deg);
 }
 
 .animated-grid .box {
