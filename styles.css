@@ -79,20 +79,12 @@ h6 {
 
 body {
     background: linear-gradient(#552084, #7a2bce);
-    text-align: right;
-    color: #DCE8FF;
-    height: 100vh;
-    width: 100vw;
-    overflow: hidden;
-}
-
-.content-wrapper {
     display: flex;
     justify-content: center;
     align-items: center;
+    text-align: right;
+    color: #DCE8FF;
     overflow: hidden;
-    height: 100vh;
-    width: 100vw;
 }
 
 main {
