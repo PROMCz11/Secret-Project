@@ -79,6 +79,7 @@ h6 {
 
 body {
     background: linear-gradient(#552084, #7a2bce);
+    background-position: center center;
     display: flex;
     justify-content: center;
     align-items: center;
