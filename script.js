@@ -1,12 +1,10 @@
 const animatedGridBoxes = document.querySelectorAll('.animated-grid .box');
-
-const min = 0;
-const max = 5000;
-// const randomNumber = Math.floor(Math.random() * (max - min + 1)) + min;
-
+// Animating the box grid
+const minDelay = 0;
+const maxDelay = 5000;
 animatedGridBoxes.forEach(box => {
     box.classList.toggle('glow');
-    const classAssignmentDelay = Math.floor(Math.random() * (max - min + 1)) + min;
+    const classAssignmentDelay = Math.floor(Math.random() * (maxDelay - minDelay + 1)) + minDelay;
     box.style.animationDelay = `${classAssignmentDelay}ms`;
     const selectedColor = Math.floor(Math.random() * 16) + 1;
     setTimeout(() => {
@@ -23,4 +21,4 @@ animatedGridBoxes.forEach(box => {
             box.classList.add('glow-red');
         }
     }, classAssignmentDelay);
-})
+});
