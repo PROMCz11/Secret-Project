@@ -1,0 +1,233 @@
+/* ------------------- */
+/* Reset               */
+/* ------------------- */
+
+/* Box sizing */
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+/* Reset margins */
+body,
+h1,
+h2,
+h3,
+h4,
+h5,
+p,
+figure,
+picture {
+    margin: 0; 
+}
+
+/* set up the body */
+body {
+    line-height: 1.5;
+    min-height: 100vh;
+}
+
+/* make images easier to work with */
+img,
+picture {
+    max-width: 100%;
+    display: block;
+}
+
+/* make form elements easier to work with */
+input,
+button,
+textarea,
+select {
+    font: inherit;
+}
+
+/* remove animations for people who've turned them off */
+@media (prefers-reduced-motion: reduce) {  
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}
+
+/* Fixing the title font weight */
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-weight: 400;
+}
+
+/* Adding Fonts */
+.noto-sans-arabic {
+    font-family: "Noto Sans Arabic", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+    font-variation-settings:
+      "wdth" 100;
+  }
+
+/* Styling */
+
+body {
+    background: linear-gradient(#552084, #7a2bce);
+    text-align: right;
+    color: #DCE8FF;
+    height: 100vh;
+    width: 100vw;
+    overflow: hidden;
+}
+
+.content-wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    height: 100vh;
+    width: 100vw;
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: .5rem;
+    background-color: white;
+    padding: 1rem;
+    color: black;
+    border-radius: 10px;
+}
+
+main p {
+    max-width: max-content;
+}
+
+main a {
+    display: block;
+    color: #DCE8FF;
+    text-decoration: none;
+    background-color: #8943d4;
+    padding: .5rem 1rem;
+    border-radius: 10px;
+}
+
+main > img {
+    padding: 1rem;
+}
+
+.animated-grid {
+    display: grid;
+    grid-template-columns: repeat(20, 1fr);
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    translate: -50% -50%;
+    gap: .5rem;
+    z-index: -1;
+    rotate: 45deg;
+}
+
+.animated-grid .box {
+    border-radius: 10px;
+    width: 10vw;
+    height: 10vw;
+    max-width: 100px;
+    max-height: 100px;
+    background-color: #8943d4;
+}
+
+.glow-blue {
+    animation: box-glow-blue ease-in-out 10000ms infinite;
+}
+
+@keyframes box-glow-blue {
+    from {
+        background-color: #8943d4;
+    }
+
+    10% {
+        background-color: #007FE6;
+    }
+
+    20% {
+        background-color: #8943d4;
+    }
+
+    to {
+        background-color: #8943d4;
+    }
+}
+
+.glow-green {
+    animation: box-glow-green ease-in-out 10000ms infinite;
+}
+
+@keyframes box-glow-green {
+    from {
+        background-color: #8943d4;
+    }
+
+    10% {
+        background-color: #33AE7E;
+    }
+
+    20% {
+        background-color: #8943d4;
+    }
+
+    to {
+        background-color: #8943d4;
+    }
+}
+
+.glow-orange {
+    animation: box-glow-orange ease-in-out 10000ms infinite;
+}
+
+@keyframes box-glow-orange {
+    from {
+        background-color: #8943d4;
+    }
+
+    10% {
+        background-color: #E78033;
+    }
+
+    20% {
+        background-color: #8943d4;
+    }
+
+    to {
+        background-color: #8943d4;
+    }
+}
+
+.glow-red {
+    animation: box-glow-red ease-in-out 10000ms infinite;
+}
+
+@keyframes box-glow-red {
+    from {
+        background-color: #8943d4;
+    }
+
+    10% {
+        background-color: #EA3353;
+    }
+
+    20% {
+        background-color: #8943d4;
+    }
+
+    to {
+        background-color: #8943d4;
+    }
+}
